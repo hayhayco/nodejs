@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+
+<form class="container form-group text-center" action="/world" method="POST">
+  <input type="text" name="title" placeholder="Title" class="form-control" value="">
+  <br>
+  <input type="text" name="image" placeholder="Images" class="form-control" value="">
+  <br>
+  <input type="text" name="des" placeholder="Description" class="form-control" value="">
+  <br>
+  <input class="btn btn-primary" type="submit" name="submit">
+</form>
+
+
+
+<% include partials/footer.ejs %>

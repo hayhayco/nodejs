@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+
+<form class="container form-group text-center" action="/world/<%= world.id%>?_method=PUT" method="POST">
+  <input type="text" name="world[title]" placeholder="Title" class="form-control" value="<%= world.title%>">
+  <br>
+  <input type="text" name="world[image]" placeholder="Images" class="form-control" value="<%= world.image %>">
+  <br>
+  <input type="text" name="world[des]" placeholder="Description" class="form-control" value="<%= world.des%>">
+  <br>
+  <input class="btn btn-primary" type="submit" name="submit">
+</form>
+
+
+
+<% include partials/footer.ejs %>

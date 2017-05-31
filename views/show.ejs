@@ -1,0 +1,26 @@
+<% include partials/header %>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="<%= world.image%>" class="img-responsive">
+    </div>
+    <div class="col-md-8">
+      <h1><%= world.title %></h1>
+      <p><%= world.des %></p>
+
+    </div>
+  </div>
+  <div class="row text-right">
+    <div class="col-md-12">
+      <a class="btn btn-primary"href="/world/<%= world._id%>/edit">Edit</a>
+      <form action="/world/<%= world._id%>?_method=DELETE" method="POST">
+          <button type="submit" class="btn btn-danger" name="button">Delete</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+<% include partials/footer %>
